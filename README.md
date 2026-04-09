@@ -1,4 +1,3 @@
-```markdown
 # Terraform EC2 - Modular Structure
 
 ## Project Structure
