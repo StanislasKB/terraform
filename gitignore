@@ -1,0 +1,27 @@
+# Clés SSH privées
+*.pem
+keys/
+
+# State Terraform (contient des données sensibles)
+*.tfstate
+*.tfstate.backup
+*.tfstate.lock.info
+
+# Répertoires de travail Terraform
+**/.terraform/
+
+# NE PAS ignorer .terraform.lock.hcl
+# Ce fichier doit être commité pour verrouiller les versions des providers
+!**/.terraform.lock.hcl
+
+# Fichiers de variables pouvant contenir des secrets
+*.auto.tfvars
+*.tfvars.local
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Logs
+crash.log
+crash.*.log
