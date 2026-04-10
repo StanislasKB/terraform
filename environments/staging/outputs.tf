@@ -33,3 +33,10 @@ output "web_public_ip" {
   description = "IP publique du serveur web - injectée dans l'inventaire Ansible"
   value       = module.ec2_instance["web"].public_ip
 }
+
+
+output "db_public_ip" {
+  description = "IP publique du serveur db - injectée dans l'inventaire Ansible"
+  value       = module.ec2_instance["db"].public_ip
+}
+

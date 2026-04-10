@@ -15,6 +15,10 @@ instances = {
     instance_type = "t3.micro"
     extra_tags    = { Role = "webserver" }
   }
+  db = {
+    instance_type = "t3.micro"
+    extra_tags    = { Role = "database" }
+  }
 }
 
 # Réseau

@@ -3,7 +3,7 @@
 
 terraform {
   backend "s3" {
-    bucket         = "ton-bucket-tfstate"   
+    bucket         = "staging-tfstate-008347"   
     key            = "staging/terraform.tfstate"
     region         = "us-east-1"
     use_lockfile   = true
