@@ -40,3 +40,8 @@ output "db_public_ip" {
   value       = module.ec2_instance["db"].public_ip
 }
 
+output "db_private_ip" {
+  description = "IP privée du serveur DB — utilisée par le serveur web pour se connecter à MySQL"
+  value       = module.ec2_instance["db"].private_ip
+}
+
