@@ -54,6 +54,13 @@ ingress_rules = [
     protocol    = "tcp"
     cidr        = "0.0.0.0/0"
     description = "HTTPS"
+  },
+   {
+    from_port   = 3306
+    to_port     = 3306
+    protocol    = "tcp"
+    cidr        = "10.2.1.0/24"
+    description = "MySQL - internal"
   }
 ]
 

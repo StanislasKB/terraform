@@ -25,3 +25,20 @@ output "instances" {
     }
   }
 }
+
+
+output "web_public_ip" {
+  description = "IP publique du serveur web - injectée dans l'inventaire Ansible"
+  value       = module.ec2_instance["web"].public_ip
+}
+
+
+output "db_public_ip" {
+  description = "IP publique du serveur db - injectée dans l'inventaire Ansible"
+  value       = module.ec2_instance["db"].public_ip
+}
+
+output "db_private_ip" {
+  description = "IP privée du serveur DB — utilisée par le serveur web pour se connecter à MySQL"
+  value       = module.ec2_instance["db"].private_ip
+}
